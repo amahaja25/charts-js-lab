@@ -3,10 +3,12 @@
 }
 
 body {
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .source{
@@ -15,4 +17,8 @@ body {
     margin-left:15px;
     margin-top:10px;
     font-style: italic;
+}
+
+h1 {
+    font-family: helvetica, sans-serif;
 }

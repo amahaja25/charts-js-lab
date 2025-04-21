@@ -99,6 +99,23 @@ var ctx = document.getElementById('myChart').getContext('2d');
             ]
           },
           options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Countries with higher GDP per capita tend to have higher life expectancies', 
+                    font: {
+                        size: 18
+                    }
+                },
+                subtitle: {
+                    display: true,
+                    text: 'The United States has the highest GDP per capita in the world and second-highest life expectancy at 77.1 years.', 
+                    font: {
+                        size: 14
+                    },
+                    color: '#666'
+                }
+            },
             scales: {
               y: {
                 title: {
@@ -131,7 +148,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
                 'Personal Care'
               ],
               datasets: [{
-                label: 'My First Dataset',
+                label: 'Minutes per day',
                 data: [542, 315, 127, 103, 100, 53, 52],
                 backgroundColor: [
                   '#8ecae6',
@@ -152,7 +169,17 @@ var ctx = document.getElementById('myChart').getContext('2d');
                 },
                 title: {
                   display: true,
-                  text: 'Chart.js Polar Area Chart'
+                  text: 'People in China spend 542 minutes, or about nine hours, sleeping each day on average',
+                  font: {
+                    size: 18
+                  }
+                },
+                subtitle: {
+                    display: true,
+                    text: 'The average Chinese person spends about 5.25 hours working each day.', 
+                    font: {
+                        size: 14
+                    },
                 }
               }
             }
